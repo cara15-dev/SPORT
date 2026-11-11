@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Explorer Guide</title>
+    <!-- Google Font for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #00b09b, #96c93d);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .sport-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .sport-card:hover {
+            transform: translateY(-5px);
+        }
+        .sport-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .sport-content {
+            padding: 1.25rem;
+        }
+        .sport-content h3 {
+            color: #00b09b;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+        .sport-content p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .video-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .video-section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+          }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sport Game,G!</h1>
+        <p>Your beginner's pathway to exploring team games.</p>
+        <p1>Leeg ang Tama!</p1>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro">
+            <h2>Welcome, Future Athlete!</h2>
+            <p>Every sport offers unique physical benefits, mental challenges, and endless fun. Browse through these beginner-friendly categories to find what moves you.</p>
+        </div>
+
+        <div class="sports-grid">
+            <!-- Basketball -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=500&q=80" alt="Basketball Hoop" onerror="this.src='https://placehold.co/400x300/00b09b/white?text=Basketball'">
+                <div class="sport-content">
+                    <h3>Basketball</h3>
+                    <p>A fast-moving team sport focused on dribbling, passing, and shooting hoops to score points.</p>
+                </div>
+            </div>
+
+            <!-- Swimming -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=500&q=80" alt="Swimming Pool" onerror="this.src='https://placehold.co/400x300/00b09b/white?text=Swimming'">
+                <div class="sport-content">
+                    <h3>Swimming</h3>
+                    <p>A brilliant full-body workout performed in water, great for building endurance and muscle tone.</p>
+                </div>
+            </div>
+
+            <!-- Tennis -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=500&q=80" alt="Tennis Racket and Ball" onerror="this.src='https://placehold.co/400x300/00b09b/white?text=Tennis'">
+                <div class="sport-content">
+                    <h3>Tennis</h3>
+                    <p>Played individually or in pairs using rackets to hit a lightweight ball back and forth across a net.</p>
+                </div>
+            </div>
+
+            <!-- Running -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=500&q=80" alt="Runner on Track" onerror="this.src='https://placehold.co/400x300/00b09b/white?text=Running'">
+                <div class="sport-content">
+                    <h3>Running</h3>
+                    <p>The ultimate endurance sport that builds mental resilience, cardiovascular health, and leg strength.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Sports Motivation & Highlights</h2>
+            <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.95rem;">Watch this short video clip showcasing the energy and inspiration behind playing sports.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NBMRgO4tDLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sports Explorer Guide. Get active, stay healthy!</p>
+        <p1>aylab anoOoOo</p1>
+    </footer>
+
+</body>
+</html>
